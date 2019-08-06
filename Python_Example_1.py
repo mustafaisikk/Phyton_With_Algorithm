@@ -17,7 +17,8 @@ sayi_1 = input("Birinci Sayiyi Giriniz: ")
 sayi_2 = input("İkinci Sayiyi Giriniz: ") 
 toplam = int(sayi_1)+int(sayi_2)
 
-print("Sayi 1 : ", sayi_1 , "+ " , sayi_2 , " = ", toplam )
+print("Sonuç : ", sayi_1 , "+ " , sayi_2 , " = ", toplam )
+
 #Output
 Birinci Sayiyi Giriniz: 10
 İkinci Sayiyi Giriniz: 12
@@ -51,7 +52,7 @@ Sınav_1 = input("İlk Sınav Notu :  ")
 Sınav_2 = input("İkinci Sınav Notu :  ")
 Sınav_3 = input("Üçüncü Sınav Notu :  ")
 
-Ortalama = (int(Sınav_1) + int(Sınav_2) + int(Sınav_3))/3;
+Ortalama = (int(Sınav_1) + int(Sınav_2) + int(Sınav_3))/3
 
 if(Ortalama < 50):
 	print("Öğrencinin Notu : ",Ortalama," --> Öğrenci Başarısızdır.")
@@ -101,7 +102,7 @@ String Karakter Biçiminde Listelendi...
 """ << --- Örnek 7 --->> 
 #Kullanıcın girdiği iki sayı arasındaki sayıların toplamını gösteren program
 
-toplam = 0;
+toplam = 0
 sayi_1 = input("Birinci Sayiyi Giriniz : ")
 sayi_2 = input("İkinci Sayiyi Giriniz : ")
 
@@ -124,11 +125,11 @@ Birinci Sayiyi Giriniz : 10
 #Girilen Sayının Asal Sayı mı Değil mi olduğunu bulan program
 
 Sayi=input("Bir Sayı Giriniz : ")
-sayac = 0;
+sayac = 0
 for i in range(2 , int(Sayi)):
 	if(int(Sayi) % i == 0):
-		sayac +=1;
-		break;
+		sayac +=1
+		break
 if(sayac == 0):
 	print("{0} Sayısı Asaldır. ".format(Sayi))
 else:
@@ -137,12 +138,14 @@ else:
 Bir Sayı Giriniz : 13
 13 Sayısı Asaldır. 
 """
-""" << --- Örnek 9 --->> 
+
+"""
+# << --- Örnek 9 --->> 
 #1 den kullanıcının girmiş olduğu sayıya kadar olan tek ve çift sayıların toplamını ayrı ayrı bulan program
 
 sayi = input("Bir Sayi Giriniz : ")
-Çift_Sayilar_toplamı = 0;
-Tek_Sayilar_toplamı = 0;
+Çift_Sayilar_toplamı = 0
+Tek_Sayilar_toplamı = 0
 
 for i in range(1 , int(sayi)):
 	if(i%2 == 0):
@@ -150,7 +153,6 @@ for i in range(1 , int(sayi)):
 	else:
 		Tek_Sayilar_toplamı += i
 print("Çift Sayıların Toplamı = {0} <--> Tek Sayıların Toplamı = {1}" . format(Çift_Sayilar_toplamı,Tek_Sayilar_toplamı))
-
 
 #Output
 Bir Sayi Giriniz : 7
@@ -169,6 +171,7 @@ Yari_Cap = input("Dairenin Yarıçapını Giriniz : ")
 print("Dairenin Alanı : {0}".format(Alan_Hesapla(Yari_Cap)))
 
 # Output
+
 Dairenin Yarıçapını Giriniz : 3
 Dairenin Alanı : 28.26
 """
