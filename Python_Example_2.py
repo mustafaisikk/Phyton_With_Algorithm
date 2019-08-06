@@ -34,7 +34,7 @@ Sayıyı 6. Defada Doğru Tahmin Ettiniz...
 
 """
 
-""" << --- Örnek 1 --->> 
+""" << --- Örnek 2 --->> 
 # Kullanıcıdan Alınan Tarihin Yılın Kaçıncı Günü Olduğunu Bulan Program
 
 def Artik_Yil_mi(Yil):
@@ -55,12 +55,8 @@ def Kacinci_Gün(Gün,Ay,Yil):
     
     return Toplam_gun
 
-Gun = int(input("Gün : "))
-Ay = int(input("Ay : "))
-Yil = int(input("Yıl : "))
-print("Girdiğiniz Tarih : {0} / {1} / {2}".format(Gun,Ay,Yil))
-Kontrol_int = int(input("Girdiğiniz Tarih Doğru Mu (1 (Evet) /0 (Hayır) )"))
-Kontrol = True
+
+Kontrol_int = 0
 
 while Kontrol_int==0:
     Gun = int(input("Gün : "))
