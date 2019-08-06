@@ -81,7 +81,7 @@ for i in range(1,101):
  <- 15 -><- 30 -><- 45 -><- 60 -><- 75 -><- 90 ->
 """
 
-""" << --- Örnek 5 --->> 
+""" << --- Örnek 6 --->> 
 #Girilen String'i Karakterlerine Ayırma
 isim = input("Bir String Giriniz : ")
 sayac = 0
@@ -98,7 +98,7 @@ String Karakter Biçiminde Listelendi...
 """
 
 
-""" << --- Örnek 6 --->> 
+""" << --- Örnek 7 --->> 
 #Kullanıcın girdiği iki sayı arasındaki sayıların toplamını gösteren program
 
 toplam = 0;
@@ -120,7 +120,7 @@ Birinci Sayiyi Giriniz : 10
 10 ile 15 Arasındaki sayıların Toplamı = 50
 """
 
-""" << --- Örnek 7 --->> 
+""" << --- Örnek 8 --->> 
 #Girilen Sayının Asal Sayı mı Değil mi olduğunu bulan program
 
 Sayi=input("Bir Sayı Giriniz : ")
@@ -137,7 +137,7 @@ else:
 Bir Sayı Giriniz : 13
 13 Sayısı Asaldır. 
 """
-""" << --- Örnek 7 --->> 
+""" << --- Örnek 9 --->> 
 #1 den kullanıcının girmiş olduğu sayıya kadar olan tek ve çift sayıların toplamını ayrı ayrı bulan program
 
 sayi = input("Bir Sayi Giriniz : ")
@@ -158,7 +158,7 @@ Bir Sayi Giriniz : 7
 """
 
 
-""" << --- Örnek 8 --->> 
+""" << --- Örnek 10 --->> 
 # Fonksiyon kullanarak yarıçapı girilen dairenin alanını hesaplayan program
 
 def Alan_Hesapla(Yari_Cap):
