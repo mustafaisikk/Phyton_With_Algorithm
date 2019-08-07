@@ -79,6 +79,7 @@ Girdiğiniz Tarih Yılın : 71. Günü
 
 """
 #  << --- Örnek 3 --->> 
+#Kullanıcıdan Alınan değerler arasında 5 ile tam bölünebilen sayıları ve toplam bölünebilen sayısını veren program
 Count = int(input("Kaç Adet Sayı Gireceksiniz : "))
 sayilar = []
 
