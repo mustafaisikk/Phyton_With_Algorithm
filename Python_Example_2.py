@@ -186,9 +186,11 @@ button.place(x = 170, y = 70)
 pencere.mainloop()
 """
 
-"""
-# << --- Örnek 6 --->> 
+
+""" << --- Örnek 6 --->> 
 # Adam Asmaca Oyunu
+
+
 import os
 
 def Var_mi(tahmin , soru , Bulunanlar):
@@ -205,6 +207,8 @@ def Var_mi(tahmin , soru , Bulunanlar):
         return False
     else:
         return True
+
+  
 
 soru = input("Sormak İstediğiniz Kelime : ")
 clear = lambda: os.system('clear')
@@ -224,9 +228,14 @@ for i in soru:
 print("\n")
 
 Hata_Sayisi = 0
-
+cikis = 1
 while Hata_Sayisi < 8:
     tahmin = input("Harf Tahmini Yapınız: (Çıkmak için 0) : ")
+
+    if(tahmin == "0"):
+        print("\n Oyundan Çıktınız ...")
+        break
+
     while len(tahmin)>1 or len(tahmin)==0:
         tahmin = input("Tahmininiz Hatalıdır Lütfen Tekrar giriniz: ")
     
