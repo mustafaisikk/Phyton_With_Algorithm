@@ -79,7 +79,6 @@ Girdiğiniz Tarih Yılın : 71. Günü
 
 """
 #  << --- Örnek 3 --->> 
-#Kullanıcıdan Alınan değerler arasında 5 ile tam bölünebilen sayıları ve toplam bölünebilen sayısını veren program
 Count = int(input("Kaç Adet Sayı Gireceksiniz : "))
 sayilar = []
 
@@ -149,7 +148,9 @@ Kullanıcı Adı : Mustafaisik
 ...
 #
 """
-"""
+
+
+""" << --- Örnek 5 --->> 
 # Kullanıcıdan String Alıp Ekrana YAzdıran Form Uygulaması...
 from tkinter import *
  
@@ -183,4 +184,77 @@ button = Button(uygulama,
 button.place(x = 170, y = 70)
 
 pencere.mainloop()
+"""
+
+"""
+# << --- Örnek 6 --->> 
+# Adam Asmaca Oyunu
+import os
+
+def Var_mi(tahmin , soru , Bulunanlar):
+    index = 0
+    bulunan_say = 0
+
+    for i in soru:
+        if(i == tahmin):
+            Bulunanlar[index] = tahmin
+            bulunan_say +=1
+        index +=1
+
+    if(bulunan_say == 0):
+        return False
+    else:
+        return True
+
+soru = input("Sormak İstediğiniz Kelime : ")
+clear = lambda: os.system('clear')
+clear()
+Bulunanlar = []
+
+for i in range(0,len(soru)):
+    Bulunanlar.insert(i," ")
+
+print("\n")
+for i in soru:
+    if(i == " "):
+        print("    ", end = "")
+    else:
+        print("[  ]", end = "")
+    
+print("\n")
+
+Hata_Sayisi = 0
+
+while Hata_Sayisi < 8:
+    tahmin = input("Harf Tahmini Yapınız: (Çıkmak için 0) : ")
+    while len(tahmin)>1 or len(tahmin)==0:
+        tahmin = input("Tahmininiz Hatalıdır Lütfen Tekrar giriniz: ")
+    
+    if(Var_mi(tahmin,soru,Bulunanlar)):
+        print("\nTahmininiz Doğru Son Durum : " , end = "")
+        for i in range(0,len(soru)):
+            if(soru[i] == " "):
+                print("    ", end = "")
+            else:
+                print("[ "+Bulunanlar[i]+" ]" , end = "")
+                
+        print("\n")
+
+    else:
+        Hata_Sayisi+=1
+        print("Tahmininiz Hatalıdır Kalan Hata Sayınız = {0} ...".format(8-Hata_Sayisi))
+    
+    kontrol = 0
+    for i in range(0,len(soru)):
+        if(soru[i] != " "):
+            if(Bulunanlar[i] == " "):
+                kontrol+=1
+
+    if(kontrol == 0):
+        print("Oyunu Tamamladınız Tebrikler...")
+        break
+
+if(Hata_Sayisi == 8):
+    print("Oyunu Kaybettiniz... ")
+    
 """

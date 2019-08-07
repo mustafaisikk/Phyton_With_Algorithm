@@ -159,8 +159,8 @@ Bir Sayi Giriniz : 7
 Çift Sayıların Toplamı = 12 <--> Tek Sayıların Toplamı = 9
 """
 
-
-""" << --- Örnek 10 --->> 
+"""
+# << --- Örnek 10 --->> 
 # Fonksiyon kullanarak yarıçapı girilen dairenin alanını hesaplayan program
 
 def Alan_Hesapla(Yari_Cap):
