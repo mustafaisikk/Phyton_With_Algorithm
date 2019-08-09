@@ -171,7 +171,7 @@ Yari_Cap = input("Dairenin Yarıçapını Giriniz : ")
 print("Dairenin Alanı : {0}".format(Alan_Hesapla(Yari_Cap)))
 
 # Output
-
 Dairenin Yarıçapını Giriniz : 3
 Dairenin Alanı : 28.26
+#
 """
