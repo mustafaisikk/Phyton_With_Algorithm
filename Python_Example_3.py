@@ -19,7 +19,7 @@ while sonuc == 0:
         cikis = 1
         break
     secim = secim.split(" - ")
-    while (len(secim) != 2) or (int(secim[0])>3) or (int(secim[1])>3):
+    while (len(secim) != 2) or (int(secim[0])>3) or (int(secim[0])<1)  or (int(secim[1])>3) or (int(secim[1])<1) :
         secim = input("Yanlis Giris Yaptiniz Lutfen Tekrar Giris Yapiniz : ")
         secim = secim.split(" - ")
 
