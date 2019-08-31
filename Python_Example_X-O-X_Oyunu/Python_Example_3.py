@@ -52,12 +52,8 @@ while sonuc == 0:
                         bitis +=1
         
         if(bitis == 3):
-            if (sira % 2 == 0):
-                print("Oyunu "+Oyuncu_1+" Kazandı...")
-                break
-            else:
-                print("Oyunu "+Oyuncu_2+" Kazandı...")
-                break
+            print("Oyunu " + Siradaki_kisi + " Kazandı...")
+            break
 
         sutun = ["","",""]
         bitis = [1,1,1]
@@ -76,24 +72,30 @@ while sonuc == 0:
                 if (sutun[2] == i[2] and sutun[2][0] != "    "):
                     bitis[2] += 1
         if((bitis[0] == 3) or (bitis[1] == 3) or (bitis[2] == 3) ):
-            if(sira %2 == 0):
-                print("Oyunu " + Oyuncu_1 + " Kazandı...")
-                break
-            else:
-                print("Oyunu " + Oyuncu_2 + " Kazandı...")
-                break
+            print("Oyunu " + Siradaki_kisi + " Kazandı...")
+            break
 
     if ((Tahta[0][0] == Tahta[1][1]) and (Tahta[1][1] == Tahta[2][2]) and (Tahta[1][1][0] != "    ")):
-        print("Oyunu " + Oyuncu_1 + " Kazandı...")
+        print("Oyunu " + Siradaki_kisi + " Kazandı...")
         break
+
     elif (Tahta[0][2] == Tahta[1][1] and Tahta[1][1] == Tahta[2][0] and Tahta[1][1][0] != "    "):
-        print("Oyunu " + Oyuncu_1 + " Kazandı...")
+        print("Oyunu " + Siradaki_kisi + " Kazandı...")
         break
+        
 
     if((bitis == 3 ) or (bitis[0] == 3) or (bitis[1] == 3) or (bitis[2] == 3)):
         break
 
+    deneme = 0
 
+    for i in Tahta:
+        for j in i:
+            if(j[0] == "    "):
+                deneme += 1
+    if(deneme == 0):
+        print("Oyun Berabere Bitmiştir...")
+        break
 
     sira +=1
     if(sira %2 == 0):
