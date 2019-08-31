@@ -105,6 +105,3 @@ while sonuc == 0:
 
 if(cikis == 1):
     print("Oyundan ciktiniz...")
-
-
-    
